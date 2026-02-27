@@ -157,7 +157,7 @@ const RecordList: React.FC<Props> = ({ records, workTypes, users, currentUser, o
 
       <div className="bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden">
         <div className="overflow-x-auto">
-          <table className="w-full text-left min-w-[800px]">
+          <table className="w-full text-left text-sm">
             <thead className="bg-slate-50 border-b border-slate-200">
               <tr>
                 {filterType === 'all' ? (

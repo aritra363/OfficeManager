@@ -26,13 +26,12 @@ const LoginPage: React.FC<Props> = ({ users, onLogin }) => {
     <div className="min-h-screen bg-slate-100 flex items-center justify-center p-6">
       <div className="max-w-md w-full">
         <div className="bg-white rounded-3xl shadow-2xl overflow-hidden border border-slate-200">
-          <div className="bg-indigo-600 p-10 text-center">
-            <div className="w-16 h-16 bg-white/20 rounded-2xl mx-auto flex items-center justify-center text-3xl mb-4 backdrop-blur-sm">🏢</div>
-            <h1 className="text-2xl font-black text-white uppercase tracking-tighter">OfficeHub Pro</h1>
-            <p className="text-indigo-100 text-sm mt-1">Tax & License Management System</p>
-          </div>
-          
-          <div className="p-10">
+        <div className="bg-indigo-600 p-10 text-center">
+          <div className="w-16 h-16 bg-white/20 rounded-2xl mx-auto flex items-center justify-center text-3xl mb-4 backdrop-blur-sm">🏢</div>
+          <p className="text-indigo-200 text-xs font-bold uppercase tracking-widest mb-2">PAL INFOTECH</p>
+          <h1 className="text-2xl font-black text-white uppercase tracking-tighter">OfficeHub Pro</h1>
+          <p className="text-indigo-100 text-sm mt-1">Tax & License Management System</p>
+        </div>          <div className="p-10">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label className="block text-xs font-bold text-slate-500 mb-1 uppercase tracking-widest">Username</label>
@@ -95,7 +94,7 @@ const LoginPage: React.FC<Props> = ({ users, onLogin }) => {
             </div>
           </div>
         </div>
-        <p className="text-center mt-8 text-slate-400 text-sm">© 2024 Professional Office Suite • Secure Local Storage</p>
+        <p className="text-center mt-8 text-slate-600 text-sm font-semibold">Made with ❤️ By PAL INFOTECH</p>
       </div>
     </div>
   );

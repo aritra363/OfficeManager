@@ -37,6 +37,7 @@ const Layout: React.FC<LayoutProps> = ({ user, workTypes, onLogout, children, ac
     <>
       <div className="p-6 border-b border-slate-800 flex justify-between items-center">
         <div>
+          <p className="text-xs font-bold text-indigo-300 uppercase tracking-widest mb-2">PAL INFOTECH</p>
           <h1 className="text-xl font-bold tracking-tight text-indigo-400">OfficeHub Pro</h1>
           <p className="text-xs text-slate-400 mt-1 uppercase tracking-widest">{user.role}</p>
         </div>
@@ -126,7 +127,10 @@ const Layout: React.FC<LayoutProps> = ({ user, workTypes, onLogout, children, ac
       <div className="flex-1 flex flex-col min-w-0 overflow-hidden">
         {/* Mobile Header */}
         <header className="lg:hidden bg-white border-b border-slate-200 p-4 flex justify-between items-center z-30">
-          <h1 className="text-lg font-bold text-indigo-600">OfficeHub Pro</h1>
+          <div>
+            <p className="text-xs font-bold text-indigo-600 uppercase">PAL INFOTECH</p>
+            <h1 className="text-lg font-bold text-indigo-600">OfficeHub Pro</h1>
+          </div>
           <button 
             onClick={() => setIsSidebarOpen(true)}
             className="p-2 text-slate-600 hover:bg-slate-100 rounded-lg"
@@ -135,11 +139,16 @@ const Layout: React.FC<LayoutProps> = ({ user, workTypes, onLogout, children, ac
           </button>
         </header>
 
-        <main className="flex-1 overflow-y-auto p-4 md:p-8 relative">
-          <div className="max-w-6xl mx-auto">
+        <main className="flex-1 overflow-y-auto p-4 md:p-6 relative">
+          <div className="w-full">
             {children}
           </div>
         </main>
+
+        {/* Footer */}
+        <footer className="bg-slate-900 text-white border-t border-slate-800 py-4 px-6 text-center">
+          <p className="text-sm font-semibold">Made with ❤️ By PAL INFOTECH</p>
+        </footer>
       </div>
     </div>
   );
